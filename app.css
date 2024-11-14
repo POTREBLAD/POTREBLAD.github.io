@@ -3,7 +3,7 @@
 #content{
 	width: 1000px;
 	margin: auto;
-	margin-top: 20px;
+	margin: 20px auto;
 }
 
 ul{
@@ -11,6 +11,10 @@ ul{
 	/*  */
 	padding: 0 8px 0 12px;
 	/* padding-left: 5px; */
+	margin-top: 5px ;
+	
+}
+.num-block{
 	margin: 20px 0 ;
 }
 .gold{
@@ -26,7 +30,7 @@ ul{
 	border-left: 4px solid #e6e6e6;
 }
 .trash{
-	margin:  0 ;
+	/* margin:  0 ; */
 	border-left: 4px solid #9ca175;
 }
 li{
