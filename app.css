@@ -1,0 +1,36 @@
+@import url('https://space-monkey-com.github.io/root.css');
+
+#content{
+	width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+ul{
+	list-style: none;
+	/*  */
+	padding: 0 8px 0 12px;
+	/* padding-left: 5px; */
+	margin: 20px 0 ;
+}
+.gold{
+	border-left: 4px solid #eecb11;
+}
+.bronze{
+	border-left: 4px solid #cd7f32;
+}
+.silver{
+	border-left: 4px solid #c0c0c0;
+}
+.other{
+	border-left: 4px solid #e6e6e6;
+}
+.trash{
+	margin:  0 ;
+	border-left: 4px solid #9ca175;
+}
+li{
+	/* padding: 2px; */
+	min-height: 25px;
+	line-height: 25px;
+}
