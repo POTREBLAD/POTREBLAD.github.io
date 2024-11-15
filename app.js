@@ -22,12 +22,16 @@ inputGamesSearch.oninput = function(){
 				el.innerHTML = el.innerText;
 				el.parentElement.parentElement.style.display = 'none';
 			}else{
-				console.log(el.parentElement.parentElement);
-				console.log(el.parentElement.parentElement.attributes);
-				let blockId = el.parentElement.parentElement.attributes.index.value;
-				block.push(blockId);
-				el.style.display = "";
-				el.innerHTML = gamesListSearch(el.innerText, search, inputData.length);
+				console.log(el.innerText);
+				let elblock = el.parentElement.parentElement.attributes.index;
+				console.log(elblock)
+				if(elblock != undefined){
+					let blockId = elblock.value;
+					block.push(blockId);
+					el.style.display = "";
+					el.innerHTML = gamesListSearch(el.innerText, search, inputData.length);
+				}
+				
 				
 			}
 			
@@ -59,7 +63,7 @@ window.onscroll = function(){
 
 
 function gamesListSearch(str, pos, len){
-	console.log(str);
+	// console.log(str);
 	return str.slice(0, pos) + '<b>' + str.slice(pos, pos+len) + '</b>' + str.slice(pos+len);
 
 }
