@@ -42,6 +42,9 @@ inputGamesSearch.oninput = function(){
 	}
 }
 
+
+
+
 function gamesListSearch(str, pos, len){
 	return str.slice(0, pos) + '<b>' + str.slice(pos, pos+len) + '</b>' + str.slice(pos+len);
 
