@@ -1,13 +1,54 @@
 @import url('https://space-monkey-com.github.io/root.css');
 
 #content{
-	/* margin-top: 40px; */
 	background-color: var(--second-background-color);
+}
+.gamestop{
 	padding:  12px 20px;
     max-width: 640px;
 	border-radius: var(--main-border-radius);
-    margin: auto;
-    margin: 20px auto;
+	margin: 20px auto;
+}
+#social-links{
+	gap: 10px;
+	grid-template-columns: auto auto auto;
+	width: 1000px;
+	margin: auto;
+	display: grid;
+	/* grid-template-columns: 150px auto 40%; */
+  /* Будет создано 3 ряда */
+  /* grid-template-rows: 250px 10vw 15rem; */
+}
+#social-links .links{
+	border-radius: 5px;
+	/* background-color: red; */
+	display: flex;
+	font-size: 50px;
+	align-items: center;
+    color: #fff;
+    justify-content: center;
+	height: 100px;
+}
+.flex-center{
+	display: flex;
+	align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.yt-link{
+	background-color: #ff0000;
+}
+.st-link{
+	background-color: #000000;
+}
+.ds-link{
+	background-color: #7289da;
+}
+.chrt-link{
+	background-color: var(--smoke);
+}
+.twitch-link{
+	background-color: #6441a5;
 }
 header a{
 	text-decoration: none;
