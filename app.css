@@ -7,6 +7,10 @@
     margin: 0px auto;
 }
 
+body{
+	overflow-y: scroll;
+}
+
 ul{
 	list-style: none;
 	/*  */
