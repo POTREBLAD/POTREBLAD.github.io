@@ -42,6 +42,14 @@ inputGamesSearch.oninput = function(){
 	}
 }
 
+window.onscroll = function(){
+	if(window.pageYOffset > 0){
+		document.querySelector('header').style.boxShadow = '0px 0px 8px #00000029';
+	}else{
+		document.querySelector('header').style.boxShadow = '';
+	}
+	console.log();
+}
 
 
 
