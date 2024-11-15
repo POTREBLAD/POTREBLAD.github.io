@@ -22,9 +22,7 @@ inputGamesSearch.oninput = function(){
 				el.innerHTML = el.innerText;
 				el.parentElement.parentElement.style.display = 'none';
 			}else{
-				console.log(el.innerText);
 				let elblock = el.parentElement.parentElement.attributes.index;
-				console.log(elblock)
 				if(elblock != undefined){
 					let blockId = elblock.value;
 					block.push(blockId);
@@ -36,7 +34,6 @@ inputGamesSearch.oninput = function(){
 			}
 			
 		});
-		console.log(block);
 		block.forEach(function(id){
 			let el = document.querySelector(`[index="${id}"]`);
 			el.style.display = '';
@@ -57,13 +54,11 @@ window.onscroll = function(){
 	}else{
 		document.querySelector('header').style.boxShadow = '';
 	}
-	console.log();
 }
 
 
 
 function gamesListSearch(str, pos, len){
-	// console.log(str);
 	return str.slice(0, pos) + '<b>' + str.slice(pos, pos+len) + '</b>' + str.slice(pos+len);
 
 }
