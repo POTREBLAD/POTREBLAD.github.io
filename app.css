@@ -152,5 +152,6 @@ li{
 }
 .img-poster{
 	height: 100px;
+	border-radius: 5px;
 	width: 66.6px;
 }
