@@ -118,24 +118,28 @@ header{
     gap: 5px;
     flex-direction: row;
     flex-wrap: wrap;
+	border-radius: 5px;
 }
 
 .gold{
-	border-left: 4px solid #eecb11;
+	/* border: 1px solid #eecb11; */
+	border-left: 4px solid gold;
 	background-color: #eecb113d;
 }
 .bronze{
+	/* border: 1px solid #d66e07; */
 	border-left: 4px solid #cd7f32;
 	background-color: #cd7f323d;
 }
 .silver{
+	/* border: 1px solid silver; */
 	border-left: 4px solid #c0c0c0;
 	background-color: #c0c0c03d;
 }
 .other{
 	
-	border-left: 4px solid #bbbbff;
-    background-color: lavender;
+	border: 1px solid #dcdcdc;
+    border-left: 4px solid #c8c8c8;
 }
 .trash{
 	/* margin:  0 ; */
