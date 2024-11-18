@@ -8,14 +8,14 @@ var inputGamesSearch = document.querySelector('#findGame');
 
 
 inputGamesSearch.oninput = function(){
-	let gamesList = document.querySelectorAll('li');
+	let gamesList = document.querySelectorAll('img');
 	let inputData = inputGamesSearch.value.trim().toLowerCase();
 	let block = [];
-	console.clear();
+	// console.clear();
 	if(inputData != ''){
 		gamesList.forEach(function(el){
-			let search = el.innerText.toLowerCase().search(inputData);
-			
+			let search = el.title.toLowerCase().search(inputData);
+			// console.log(el.title);
 			if(search == -1){
 
 				el.style.display = "none";
@@ -27,10 +27,7 @@ inputGamesSearch.oninput = function(){
 					let blockId = elblock.value;
 					block.push(blockId);
 					el.style.display = "";
-					el.innerHTML = gamesListSearch(el.innerText, search, inputData.length);
 				}
-				
-				
 			}
 			
 		});
