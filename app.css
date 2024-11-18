@@ -5,7 +5,7 @@
 }
 .gamestop{
 	padding:  12px 20px;
-    max-width: 640px;
+    max-width: 655px;
 	border-radius: var(--main-border-radius);
 	margin: 20px auto;
 }
@@ -134,8 +134,8 @@ header{
 }
 .other{
 	
-	border-left: 4px solid #e6e6e6;
-	background-color: #e6e6e63d;
+	border-left: 4px solid #bbbbff;
+    background-color: lavender;
 }
 .trash{
 	/* margin:  0 ; */
