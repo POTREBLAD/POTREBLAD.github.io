@@ -79,6 +79,7 @@ header{
 	transition: .2s;
 	position: sticky;
     top: 0;
+	z-index: 2;
     display: flex;
     width: 100%;
     background-color: #fff;
@@ -94,20 +95,47 @@ header{
 	font-size: 13px;
 	color: #a0a0a4;
 }
-.num-block{
-	margin: 20px 0 ;
+#header{
+	margin-bottom: 20px;
 }
+.num-block{
+	position: relative;
+	/* margin: 20px 0 ; */
+}
+.rating-el{
+	font-size: 12px;
+	background-color: #fff;
+	padding: 2px 5px;
+	border-radius: 5px;
+	right: 10px;
+	top: 10px;
+	position: absolute;
+}
+.img-list{
+	margin-bottom: 5px;
+	padding: 5px;
+	display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .gold{
 	border-left: 4px solid #eecb11;
+	background-color: #eecb113d;
 }
 .bronze{
 	border-left: 4px solid #cd7f32;
+	background-color: #cd7f323d;
 }
 .silver{
 	border-left: 4px solid #c0c0c0;
+	background-color: #c0c0c03d;
 }
 .other{
+	
 	border-left: 4px solid #e6e6e6;
+	background-color: #e6e6e63d;
 }
 .trash{
 	/* margin:  0 ; */
@@ -118,9 +146,7 @@ li{
 	min-height: 25px;
 	line-height: 25px;
 }
-img{
-	/* width: 15px; */
-	height: 20px; 
-	/* width: 230px;
-	height: 107.5px; */
+.img-poster{
+	height: 100px;
+	width: 66.6px;
 }
