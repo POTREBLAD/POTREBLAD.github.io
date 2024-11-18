@@ -6,6 +6,19 @@
 
 var inputGamesSearch = document.querySelector('#findGame');
 
+let GamePosters = document.querySelectorAll('img');
+
+GamePosters.forEach(function(el){
+	console.log(el)
+	el.onclick = function(){
+		if(el.classList.value.indexOf('img-poster-big') != -1){
+			el.classList.remove('img-poster-big');
+		}else{
+			el.classList.add('img-poster-big');
+		}
+		
+	}
+});
 
 inputGamesSearch.oninput = function(){
 	let gamesList = document.querySelectorAll('img');
