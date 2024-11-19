@@ -9,12 +9,30 @@ var inputGamesSearch = document.querySelector('#findGame');
 let GamePosters = document.querySelectorAll('img');
 
 GamePosters.forEach(function(el){
-	console.log(el)
+	// console.log(el)
+	let bg = el.parentElement.querySelector(".poster-background");
+	let gamename = el.title;
+	let gameheader = bg.querySelector('.game-header');
 	el.onclick = function(){
 		if(el.classList.value.indexOf('img-poster-big') != -1){
 			el.classList.remove('img-poster-big');
+			el.style.left = 0;
+			bg.style.opacity = 0;
+			// el.style.left = "";
+			// bg.style.zIndex = "-1";
+			bg.style.display = "";
+			el.parentElement.style.height = '';
+			
 		}else{
+			gameheader.innerText = gamename;
 			el.classList.add('img-poster-big');
+			bg.style.display = "block";
+			bg.style.zIndex = 1;
+			el.parentElement.style.height = '300px';
+			el.style.left = "";
+			bg.style.opacity = 1;
+			// el.style.left = 5+'px';
+			el.style.left = -el.offsetLeft + 8 + 5 + 'px';
 		}
 		
 	}
