@@ -44,11 +44,11 @@ inputGamesSearch.oninput = function(){
 	let block = [];
 	// console.clear();
 	if(inputData != ''){
+		document.querySelector(`[index="10"]`).style.display = "none";
 		gamesList.forEach(function(el){
 			let search = el.title.toLowerCase().search(inputData);
 			// console.log(el.title);
 			if(search == -1){
-
 				el.style.display = "none";
 				el.innerHTML = el.innerText;
 				el.parentElement.parentElement.style.display = 'none';
