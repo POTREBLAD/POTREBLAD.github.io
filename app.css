@@ -1,5 +1,8 @@
 @import url('https://space-monkey-com.github.io/root.css');
-
+*{
+	user-select: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
 #content{
 	background-color: var(--second-background-color);
 }
@@ -16,6 +19,7 @@
 	margin: auto;
 	display: grid;
 }
+
 #social-links .links{
 	border-radius: 5px;
 	/* background-color: red; */
@@ -102,7 +106,11 @@ header{
 	position: relative;
 	/* margin: 20px 0 ; */
 }
+.num-block span{
+	color: #fff;
+}
 .rating-el{
+	z-index: 3;
 	font-size: 12px;
 	background-color: #fff;
 	padding: 2px 5px;
@@ -121,31 +129,57 @@ header{
     flex-wrap: wrap;
 	border-radius: 5px;
 }
-
-.gold{
+div.now_play{
+	/* border: 1px solid #eecb11; */
+	border-left: 4px solid #5bc736;
+	background-color: #5bc7360f;;
+}
+div.gold{
 	/* border: 1px solid #eecb11; */
 	border-left: 4px solid gold;
 	background-color: #eecb113d;
 }
-.bronze{
+div.bronze{
 	/* border: 1px solid #d66e07; */
 	border-left: 4px solid #cd7f32;
 	background-color: #cd7f323d;
 }
-.silver{
+div.silver{
 	/* border: 1px solid silver; */
 	border-left: 4px solid #c0c0c0;
 	background-color: #c0c0c03d;
 }
-.other{
+div.other{
 	
 	border: 1px solid #dcdcdc;
     border-left: 4px solid #c8c8c8;
 }
-.trash{
+
+div.trash{
 	/* margin:  0 ; */
-	border-left: 4px solid #9ca175;
+	border-left: 4px solid red;
+	background-color: #ff00003d;
 }
+
+span.now_play{
+	background-color: #5bc736;
+}
+span.gold{
+	background-color: #eac500;
+}
+span.bronze{
+	background-color: #cd7f32;;
+}
+span.silver{
+	background-color: #b0b0b0;
+}
+span.other{
+	color: #000;
+}
+span.trash{
+	background-color: red;
+}
+
 li{
 	/* padding: 2px; */
 	min-height: 25px;
@@ -174,6 +208,9 @@ li{
 	height: 100%;
 	display: none;
 	z-index: 2;
+}
+.poster-background span{
+	color: #000;
 }
 .poster-content{
 	padding: 10px;
